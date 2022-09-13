@@ -19,5 +19,6 @@ from meu_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/<nome>/<int:idade>', views.hello)
+    path('hello/<nome>/<int:idade>', views.hello),
+    path('soma/<int:numero_a>/<int:numero_b/', views.soma)
 ]
